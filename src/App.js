@@ -24,6 +24,7 @@ function App() {
       payload: data?.data?.products,
     });
   };
+
   return (
     <div style={{ display: "flex" }}>
       <Product state={state} dispatch={dispatch} />

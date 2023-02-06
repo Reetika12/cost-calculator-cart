@@ -1,0 +1,77 @@
+
+
+    .input{
+        margin-left: 5px;
+        padding: 4px;
+      }
+      .WrapPage{
+        display: flex;
+        // align-items: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .select{
+        padding-left: 30px;
+        border-width: 0;
+        outline: 0,
+      }
+      .label{
+        font-weight: bold;
+      }
+      .dropdownStatic2{
+        width: 150px;
+        margin-left: 20px;
+        // color: aqua;
+      }
+      .dateStyle{
+        width: 200px;
+        margin-left: 20px;
+      }
+      .filterRow{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .tagBox{
+        display: flex;
+        align-items: center;
+        height: 38px;
+        border: 0.8px solid #DCDCDC;
+        background: #DCDCDC;
+        margin-left: 3px;
+        // margin: 10px 5px;
+      }
+      .selectedBox{
+        display: flex;
+        align-items: center;
+        height: 33px;
+        border: 1px solid rgb(0, 150, 255);
+        background: rgb(0, 150, 255);
+        // margin: 10px 5px;
+      }
+      .key {
+        font-weight: bold;
+        margin-right: 5px;
+        background: #DCDCDC;
+        border: none;
+      }
+      .keyStyle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        // width:100%;
+      }
+      .seKey{
+        background: rgb(0, 150, 255);
+        border: none;
+        margin-right: 5px;
+        color: #fff;
+      }
+      .selectedBulletKey{
+        background: rgb(0, 150, 255);
+        border: none;
+        color: #fff;
+        margin-left: 3px;
+      }
+  
