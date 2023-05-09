@@ -4,7 +4,8 @@ import axios from "axios";
 import "./App.css";
 import Product from "./component/product";
 import Cart from "./component/cart";
-
+// import TrackVehicle from "./Container/TrackVehicle";
+import TrackFile from "./Container/TrackFile";
 function App() {
   const [state, dispatch] = useReducer(cartReducer, {
     products: [],
@@ -19,16 +20,23 @@ function App() {
 
   const fetchProducts = async () => {
     let data = await axios.get("https://dummyjson.com/products");
+    console.log("dataa++", data);
     dispatch({
       type: "ADD_PRODUCTS",
       payload: data?.data?.products,
     });
+    // dispatch({
+    //   type: "ADD_PRODUCTS",
+    //   payload: data?.data?.products,
+    // });
   };
 
   return (
     <div style={{ display: "flex" }}>
-      <Product state={state} dispatch={dispatch} />
-      <Cart state={state} dispatch={dispatch} />
+      {/* <TrackVehicle /> */}
+      <TrackFile />
+      {/* <Product state={state} dispatch={dispatch} />
+      <Cart state={state} dispatch={dispatch} /> */}
     </div>
   );
 }

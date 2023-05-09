@@ -12,7 +12,7 @@ function Product({ state, dispatch }) {
         width: "80%",
       }}
     >
-      {products.map((el) => (
+      {products.map((el) => ( 
         <div
           key={el?.id}
           style={{
@@ -52,6 +52,14 @@ function Product({ state, dispatch }) {
                   },
                 });
               }}
+              // onClick={() => {
+              //   dispatch({
+              //     type: "REMOVE_FROM_CART",
+              //     payload: {
+              //       id: el.id,
+              //     },
+              //   });
+              // }}
             >
               Remove from Cart
             </button>
