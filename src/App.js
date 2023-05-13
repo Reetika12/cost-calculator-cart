@@ -4,8 +4,8 @@ import axios from "axios";
 import "./App.css";
 import Product from "./component/product";
 import Cart from "./component/cart";
-// import TrackVehicle from "./Container/TrackVehicle";
-import TrackFile from "./Container/TrackFile";
+import CheckConnection from "./component/CheckConnection";
+
 function App() {
   const [state, dispatch] = useReducer(cartReducer, {
     products: [],
@@ -32,12 +32,13 @@ function App() {
   };
 
   return (
-    <div style={{ display: "flex" }}>
-      {/* <TrackVehicle /> */}
-      <TrackFile />
-      {/* <Product state={state} dispatch={dispatch} />
-      <Cart state={state} dispatch={dispatch} /> */}
-    </div>
+    <CheckConnection>
+      <div style={{ display: "flex" }}>
+        {/* <TrackFile /> */}
+        <Product state={state} dispatch={dispatch} />
+        <Cart state={state} dispatch={dispatch} />
+      </div>
+    </CheckConnection>
   );
 }
 
